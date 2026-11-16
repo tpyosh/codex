@@ -1,0 +1,4 @@
+interface:
+  display_name: "未解決課題の管理"
+  short_description: "プロジェクトの未解決課題を、依頼された範囲で登録・整理・レビュー・対応します。"
+  default_prompt: "$backlog を使って、指定したプロジェクトの未解決課題を依頼した範囲で整理してください。"

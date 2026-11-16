@@ -1,0 +1,4 @@
+interface:
+  display_name: "開発セッションの振り返り"
+  short_description: "実際の失敗・重複・導線の欠落から、必要なハーネス改善だけを選びます。"
+  default_prompt: "$retro を使って、この開発セッションを根拠に基づいて振り返ってください。"
