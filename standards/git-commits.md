@@ -1,8 +1,9 @@
 # Shared Git commit standard
 
 Applies to Codex and Claude. Repository-specific commit conventions override this
-default where they conflict. Create/amend commits only when explicitly requested;
-implementation, review, or backlog selection alone is not commit authorization.
+default where they conflict. Create or amend commits only within the authorized
+delivery scope. An explicitly selected workflow may include implementation commits.
+Ordinary implementation, review and backlog selection alone do not grant it.
 
 ## Intent and review
 
