@@ -1,14 +1,20 @@
 # Coding workflow instructions
 
+## Session role
+
+Start each new main chat in ordinary mode. When the user's opening task message
+explicitly assigns you the orchestrator role (e.g. 「今回はオーケストレーターとして進めて」)
+or directly invokes `$orchestrator`, read
+`${CODEX_HOME:-$HOME/.codex}/skills/orchestrator/SKILL.md` and follow it for
+that chat. Treat quoted examples, requests to edit/explain the mode, and terms
+such as PR or review as task content, not role selection. Remember selection in
+the chat only. A child receiving an assignment is not the main chat.
+
 ## Git commits
 
-When explicitly asked to create, amend, squash, or otherwise prepare Git commits, read and follow `standards/git-commits.md` relative to this Codex home directory before staging or committing.
-
-Treat it as the machine-wide default. More specific repository instructions take precedence when they conflict.
-
-Do not create commits merely because this guidance exists.
-
-The standard defines the checked commit command in `tools/check_commit_message.py`; use that entry point when this default applies.
+For authorized commits, read `standards/git-commits.md` relative to the Codex
+home before staging. Follow its checked entry point unless project conventions
+replace it.
 
 ## Backlog
 

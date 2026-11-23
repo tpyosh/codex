@@ -66,7 +66,7 @@ review handles behavior, scope, and judgement. No fixed reviewer count is needed
 
 Completion requires the problem to be resolved, proportionate checks passing,
 necessary tests/docs updated, backlog state updated, and the change committed
-when the user explicitly authorized commits as part of execution. Selection or
+when commits are in the authorized delivery scope. Selection or
 implementation alone does not authorize a commit. A failed or unavailable check is
 not resolution; retain the entry and describe the remaining verification.
 
@@ -86,24 +86,15 @@ work branch/commit in the handoff; update the tracker only within authorized
 access and do not add a parallel local backlog. The same applies to shared
 unversioned issue stores: defer global resolution until integration.
 
-Never merge into the formal branch, push, deploy, or affect external systems
-beyond the user's separate authorization. Rules that allow a command do not
-grant that authorization. Do not mark main's issue resolved based on an
-unintegrated branch. For a current-session fix on a separate branch, the code
-and tracked backlog change reach the formal branch together on approved merge.
+## Integration and handoff
 
-## Handoff
+Follow the user's authorized delivery scope, including any explicitly selected
+session workflow. That workflow owns PR creation, review, merge and cleanup.
+Retain deliverable branches and worktrees until integration is confirmed.
+Ordinary backlog execution alone does not authorize publishing or merging.
 
-Report solved issues and main changes, checks actually run (including failures),
-remaining/pending work, the branch and commit hashes, and any integration caveat.
-Retain branches/worktrees containing deliverable work; clean up only disposable
-validation artifacts you created. Distinguish implementation/validation complete
-from commit, publication, and integration complete; an unrequested commit is not
-a blocker to the first. Explain what remains without requiring all the logs.
-
-For an authorized PR, follow the repository's template and describe the problem,
-resulting behavior, evidence/checks, unresolved limits, and real issue references.
-Use the existing PR if one already represents this change. Draft the body locally
-when publication is not authorized or when validating the workflow. Creating a PR,
-pushing, and closing the issue are separate external actions; do not perform them
-as a test. An issue remains open until the integration condition above is met.
+Report solved issues, checks actually run, remaining work, branch/commits and
+integration state. When only a handoff was requested, retain deliverable work
+and draft any requested PR text locally. Use the project's template and
+existing PR where applicable; describe the problem, resulting behavior,
+actual checks, limits and issue references.

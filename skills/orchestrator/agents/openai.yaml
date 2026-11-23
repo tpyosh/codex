@@ -1,0 +1,6 @@
+interface:
+  display_name: "オーケストレーター"
+  short_description: "このチャットの親が依頼を整理し、実装から独立レビュー、マージまで進めます"
+  default_prompt: "$orchestrator 今回はオーケストレーターとして進めて"
+policy:
+  allow_implicit_invocation: false

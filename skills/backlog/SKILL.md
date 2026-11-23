@@ -104,10 +104,11 @@ longer applicable. Insufficient verification leaves the entry unresolved.
 Consolidate duplicates without losing distinct evidence or acceptance conditions.
 Keep pending decisions concise and current.
 
-When the user asks for subagents, or applicable instructions request delegation,
-use available standard subagents and reuse an applicable existing reviewer.
-Otherwise a direct review is sufficient. Give reviewers a bounded scope and ask
-them to return the problem, evidence, and resolution criterion **without writing
+Choose review staffing within the authorized workflow. A direct backlog review
+is sufficient by default. For implementation delivered through a selected PR
+workflow, that workflow owns independent review, findings and integration.
+Give reviewers a bounded scope and ask them to return the problem, evidence,
+and resolution criterion **without writing
 the backlog or fixing code**. The parent validates, deduplicates, and is the sole
 backlog writer. In a read-only review tool (`codex review`, a dedicated review
 surface, or a restricted child), return findings; a writable parent may capture
